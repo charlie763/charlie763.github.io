@@ -1,11 +1,11 @@
 # Site settings
 author: Charlie Wisoff
-title: 
+title: Charlie's Dev Blog
 header-img: img/home-bg.png
 email: cwisoff@gmail.com
 copyright_name: Charlie Wisoff
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Musings about Becoming a Software Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  charlie763
