@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Next Steps - Why I Want to Be a Software Engineer "
-date:       2020-05-27 21:13:23 +0000
+date:       2020-05-27 17:13:24 -0400
 permalink:  next_steps_-_why_i_want_to_be_a_software_engineer
 ---
 
