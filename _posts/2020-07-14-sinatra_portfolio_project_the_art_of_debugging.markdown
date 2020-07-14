@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Portfolio Project – The Art of Debugging"
-date:       2020-07-14 16:15:53 +0000
+date:       2020-07-14 12:15:54 -0400
 permalink:  sinatra_portfolio_project_the_art_of_debugging
 ---
 
@@ -11,6 +11,7 @@ We recently finished the Sinatra module at the Flatiron Software Engineering pro
 During this project, I got stuck on some particularly nasty bugs. Despite my best googling efforts, there was no clear answer, and I struggled a lot before figuring them out. I like to think that such debugging sessions are valuable as they build my confidence and make me a better debugger for the future. 
 
 **Bug #1: Sinatra and Active Record Version Mismatch Causes Rake DB:Migrate to Fail Silently**
+
 Throughout the coding labs provided by Flatiron, the Active Record gem was always specified to be version 5.2. When I was setting up my initial project I wanted to use the newest versions of all my gems to see what happened. 
 
 Everything was going swimmingly as I set up my project and got it to “Hello World” status. I decided to build my file structure mostly from scratch, instead of using the Corneal gem because I wanted practice and better understanding of initial configuration steps. In the environment file, I configured the database like I had seen it done in previous labs:
@@ -36,6 +37,7 @@ set :database, {
 They had changed the syntax for configuring the database. There was no mention of the old syntax, and no error was thrown if you used it.
 
 **Bug #2: Loading CSS and Static Files through href in Sinatra**
+
 When making my css files I copied a pattern I had seen of putting them in a public/stylesheets folder at the root directory. In my layout.erb file I put:
 
 ```
@@ -59,6 +61,7 @@ Sinatra was looking for default.css in the /public/public/stylesheets directory,
 solved my problem. I later learned that you also need to explicitly ```set :public_folder, ‘public’``` in the configuration of your app controller or else heroku will not be able to find your static files when the app is deployed. 
 
 **Lessons**
+
 The biggest lesson I learned is, when there aren’t informative errors or answers on the internet, read documentation very closely. Develop hypotheses for what might be wrong based on the documentation and methodically test out those hypotheses. If all else fails, look at source code and try to understand what’s actually going on behind the scenes. 
 
 
