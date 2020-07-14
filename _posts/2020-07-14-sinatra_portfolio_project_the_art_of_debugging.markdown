@@ -6,7 +6,7 @@ permalink:  sinatra_portfolio_project_the_art_of_debugging
 ---
 
 
-We recently finished the Sinatra module at the Flatiron Software Engineering program, including SQL and Active Record. For my portfolio project, I built a CMS (Content Management System) for creating Github portfolios. My Sinatra app pulls a user’s Github repos from the Github API and allows them to select specific repos to include in their portfolio. They can then dynamically generate html and css for that portfolio that could be included, for example, in their personal website. If you want to check out my portfolio project you can find the repo [here](https://github.com/charlie763/github-portfolio-cms) and a heroku hosted version [here](https://infinite-cove-25560.herokuapp.com)
+We recently finished the Sinatra module at the Flatiron Software Engineering program, including SQL and Active Record. For my portfolio project, I built a CMS (Content Management System) for creating Github portfolios. My Sinatra app pulls a user’s Github repos from the Github API and allows them to select specific repos to include in their portfolio. They can then dynamically generate html and css for that portfolio that could be included, for example, in their personal website. If you want to check out my portfolio project you can find the repo [here](https://github.com/charlie763/github-portfolio-cms) and a heroku hosted version [here](https://infinite-cove-25560.herokuapp.com).
 
 During this project, I got stuck on some particularly nasty bugs. Despite my best googling efforts, there was no clear answer, and I struggled a lot before figuring them out. I like to think that such debugging sessions are valuable as they build my confidence and make me a better debugger for the future. 
 
