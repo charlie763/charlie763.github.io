@@ -17,10 +17,12 @@ Most of the project went swimmingly. I set up a representation of the Tetris boa
 Perhaps more of a math problem than a software engineering problem, getting a piece to rotate around a pivot point on a grid is surprisingly difficult. I started by trying to hard code the permutations of positions a piece would inhabit as it rotated. Although not a long term solution, I thought this would at least give me a sense of the patterns involved with rotation. I quickly realized that the permutations were too many to get very far. 
 
 ![tetris LPiece](https://drive.google.com/uc?export=view&id=1D0dwGQQgmN9Sy8rYXdrDfESmUunjOGf6)
+
+
 ![tetris rotated LPiece](https://drive.google.com/uc?export=view&id=13-UC1PzwplMTX5ixzbHHLmHJBT-bYBc3)
 
 
-For example, the piece on the left might be represented by the array `[[1, 3], [2, 3], [2, 2], [2, 1]`. Assuming the only difference with the piece on the right is that it’s been rotated clockwise, it would be represented by the array `[[1, 2], [1, 3], [2, 3], [3, 3]]`. Here, the 4 nested arrays each represent a ‘cell’ with x and y coordinates in the ‘piece’. The challenge of the rotation problem is figuring out how to abstractly derive the coordinates in the second array given the first array. It becomes more difficult when you take into account the other types of pieces in Tetris.
+For example, the piece on the top might be represented by the array `[[1, 3], [2, 3], [2, 2], [2, 1]`. Assuming the only difference with the piece on the bottom is that it’s been rotated clockwise, it would be represented by the array `[[1, 2], [1, 3], [2, 3], [3, 3]]`. Here, the 4 nested arrays each represent a ‘cell’ with x and y coordinates in the ‘piece’. The challenge of the rotation problem is figuring out how to abstractly derive the coordinates in the second array given the first array. It becomes more difficult when you take into account the other types of pieces in Tetris.
 
 
 To solve this problem, I began by getting out a piece of paper, picking one piece type, drawing different rotation positions and listing the associated coordinates of each position. I tried to identify which variables the end coordinates were dependent on. It became clear that new coordinates were dependent on a combination of the old coordinates and the coordinates of the pivot piece. In hindsight, I’d like to say that I set up a system of equations and solved it mathematically, but it was a little more trial and error. After tinkering for a bit, I knew that the equation for deriving new x and y coordinates for a given cell should look something like:
