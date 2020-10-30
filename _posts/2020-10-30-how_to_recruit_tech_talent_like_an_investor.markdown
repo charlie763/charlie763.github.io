@@ -1,17 +1,19 @@
 ---
 layout: post
 title:      "How to Recruit Tech Talent Like an Investor"
-date:       2020-10-30 16:40:18 +0000
+date:       2020-10-30 12:40:19 -0400
 permalink:  how_to_recruit_tech_talent_like_an_investor
 ---
 
 
 I recently received two rejections after completing technical challenges for companies I was interviewing with. The feedback I got was NOT that I did poorly on the technical challenges but that there were other candidates who are more qualified. Like other recent bootcamp grads, I’m facing a common challenge: I often don’t look as good on paper as people with Computer Science degrees or people who have professional experience as a software engineer. I grok that recruiters have something along the lines of a list of checkboxes they tick off: 
 
+```
 [x] Javascript
 [  ] Typescript
 [  ] +2 years of software engineering experience
 …
+```
 
 I have been reflecting on this challenge, and I think the approach I should take is not necessarily to get more boxes checked off (although I am doing that in my spare time). Rather, I want to learn how to convince recruiters to think more like an investor. In particular, I hope to convince them that I’m less of a risky investment than they think.
 
@@ -44,7 +46,7 @@ React, the most popular javascript frontend framework, is only 7 years old. A st
 
 There are notorious examples of job postings asking for more years of experience in a technology than that technology has existed for. 
 
-![years-experience-tweet.png](https://postimg.cc/tY0K8m8j)
+![years-experience-tweet.png](https://i.postimg.cc/WbtsFBnh/years-experience-tweet.png)
 
 Even if a developer ends up working with only the technology stack they were hired for, they will likely encounter novel situations and challenges along the way. This requires, not knowledge, but the ability to quickly acquire knowledge.
 
